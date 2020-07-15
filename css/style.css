@@ -37,7 +37,7 @@ a{
 
 /* title */
 #title-page{
-    background-image: url("https://github.com/RC2427/Agency-template/blob/master/img/header-bg.jpg");
+    background-image: url("file:///C:/Users/rohit/Desktop/My%20Workspace/New%20Project/img/header-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -69,8 +69,29 @@ a{
     margin-top: 40px;
     padding: 20px 30px;
     background-color: #fec810;
+    transition: transform 100ms linear;
     color: black;
 }
+
+.header .btn:hover{
+    background-color: #d1a50d;
+    transform: perspective(100px) translateZ(5px);
+}
+
+@media (max-width:640px){
+    .header-cont{
+        padding-top: 150px;
+    }
+}
+
+@media (max-width:640px){
+    .header h1{
+        font-size: 3.7rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+}
+
 
 /* services */
 
@@ -101,6 +122,7 @@ a{
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
+    -webkit-font-smoothing: antialiased;
 }
 
 .service-col h4{
@@ -113,7 +135,23 @@ a{
     color: #fec810; 
 }
 
+.service-col .fonticon :hover{
+    transition: transform 100ms linear;
+    transform: perspective(150px) translateZ(10px);
+}
+
 .service-col p{
     color: gray;
 }
 
+@media (max-width:640px){
+    #services{
+        padding: 100px 0px;
+    }
+}
+
+@media (max-width:640px){
+    .service-col{
+        padding: 15px;
+    }
+}
