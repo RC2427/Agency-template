@@ -1,157 +1,194 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    font-family: Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;
-    text-align: left;
-    line-height: 1.5;
-    background-color: #fff;
+body {
+  font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-align: left;
+  line-height: 1.5;
+  background-color: #fff;
 }
 
-a{
-    color: white;
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+h4 {
+  margin: 20px 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+/* Generic */
+
+.row-detail {
+  margin: 5% 0% 5% 0%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* navbar */
-.navbar{
-    position: fixed;
+.navbar {
+  position: fixed;
 }
 
-.navbar-brand.brand{
-    font-size: 1.7rem;  
-    font-family: Kaushan Script,Helvetica Neue,Helvetica,Arial,cursive;
-    color: yellow;
+.navbar-brand.brand {
+  font-size: 1.7rem;
+  font-family: Kaushan Script, Helvetica Neue, Helvetica, Arial, cursive;
+  color: yellow;
 }
 
-.nav-list{
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #fff;
+.nav-list {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
 }
 
-.navbar-dark .navbar-nav .nav-link{
-    color: #fff;
-    padding: 15px;
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  padding: 15px;
 }
 
 /* title */
-#title-page{
-    background-image: url("file:///C:/Users/rohit/Desktop/My%20Workspace/New%20Project/img/header-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+#title-page {
+  background-image: url("file:///C:/Users/rohit/Desktop/My%20Workspace/New%20Project/img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.header-cont{
-    text-align: center;
-    padding: 280px 10px 180px 10px;
+.header-cont {
+  text-align: center;
+  padding: 280px 10px 180px 10px;
 }
 
-.header{
-    color: #fff;
-    text-align: center;
+.header {
+  color: #fff;
+  text-align: center;
 }
 
-.header h2{
-    font-family: Droid Serif,Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-style: italic;
-    line-height: 1.2;
-    font-size: 40px;
+.header h2 {
+  font-family: Droid Serif, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-style: italic;
+  line-height: 1.2;
+  font-size: 40px;
 }
 
-.header h1{
-    font-size: 4.8rem;
-    font-weight: 800;
-    line-height: 1.2;
+.header h1 {
+  font-size: 4.8rem;
+  font-weight: 800;
+  line-height: 1.2;
 }
 
-.header .btn{
-    margin-top: 40px;
-    padding: 20px 30px;
-    background-color: #fec810;
-    transition: transform 100ms linear;
-    color: black;
+.header .btn {
+  margin-top: 40px;
+  padding: 20px 30px;
+  background-color: #fec810;
+  transition: transform 100ms linear;
+  color: black;
 }
 
-.header .btn:hover{
-    background-color: #d1a50d;
-    transform: perspective(100px) translateZ(5px);
+.header .btn:hover {
+  background-color: #d1a50d;
+  transform: perspective(100px) translateZ(5px);
 }
 
-@media (max-width:640px){
-    .header-cont{
-        padding-top: 150px;
-    }
+@media (max-width: 640px) {
+  .header-cont {
+    padding-top: 150px;
+  }
 }
 
-@media (max-width:640px){
-    .header h1{
-        font-size: 3.7rem;
-        font-weight: 700;
-        line-height: 1.1;
-    }
+@media (max-width: 640px) {
+  .header h1 {
+    font-size: 3.7rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
 }
-
 
 /* services */
 
-#services{
-    padding: 150px 0px;
+#services {
+  padding: 150px 0px;
 }
 
-.service-head{
-    text-align: center;
+.service-head {
+  text-align: center;
 }
 
-.service-head h1{
-    font-family: Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-weight: 700;
+.service-col h4 {
+  font-weight: 700;
+  color: black;
 }
 
-.service-head h4{
-    margin: 20px 0px;
-    font-family: Helvetica,Arial,sans-serif;
-    font-weight: 500;
-    font-size: 1.2rem;
-    color: gray;
+.service-col .fas {
+  font-size: 5.3rem;
+  margin: 25px 0px;
+  color: #fec810;
 }
 
-.service-row-detail{
-    margin: 5% 0% 5% 0%;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500;
-    -webkit-font-smoothing: antialiased;
+.service-col .fonticon :hover {
+  transition: transform 100ms linear;
+  transform: perspective(150px) translateZ(10px);
 }
 
-.service-col h4{
-    font-weight: 700;
+.service-col p {
+  color: gray;
 }
 
-.service-col .fas{
-    font-size: 5.3rem;
-    margin: 25px 0px;
-    color: #fec810; 
+@media (max-width: 640px) {
+  #services {
+    padding: 100px 0px;
+  }
 }
 
-.service-col .fonticon :hover{
-    transition: transform 100ms linear;
-    transform: perspective(150px) translateZ(10px);
+@media (max-width: 640px) {
+  .service-col {
+    padding: 15px;
+  }
 }
 
-.service-col p{
-    color: gray;
+/* portfolio */
+
+#portfolio {
+  padding: 150px 0px;
+  background-color: #f7f7f7;
 }
 
-@media (max-width:640px){
-    #services{
-        padding: 100px 0px;
-    }
+.port-cont {
+  text-align: center;
 }
 
-@media (max-width:640px){
-    .service-col{
-        padding: 15px;
-    }
+.upper-row{
+    margin-bottom: 0%;
 }
+
+.lower-row{
+    margin-top: 3%;
+}
+
+.port-card h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0rem;
+}
+
+.port-card h4{
+    margin-top: 0px;
+}
+
