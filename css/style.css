@@ -31,6 +31,16 @@ h4 {
   color: gray;
 }
 
+@media (max-width : 640px){
+  h1{
+    font-size: 2.1rem;
+  }
+  
+  h4{
+    font-size: 1.1rem;
+  }
+}
+
 /* Generic */
 
 .row-detail {
@@ -120,6 +130,16 @@ h4 {
   }
 }
 
+@media (max-width: 640px){
+  .header .btn{
+    padding: 18px 15px;
+  }
+
+  .header .btn a{
+    font-size: 1.1rem;
+  }
+}
+
 /* services */
 
 #services {
@@ -173,6 +193,7 @@ h4 {
   text-align: center;
 }
 
+
 .upper-row{
     margin-bottom: 0%;
 }
@@ -189,5 +210,30 @@ h4 {
 
 .port-card h4{
     margin-top: 0px;
+}
+
+@media (max-width: 640px){
+  #portfolio{
+    padding-top: 100px ;
+  }
+  
+  .lower-row{
+    margin-top: 8px;
+  }
+
+  .port-cont{
+    padding: 25px;
+  }
+
+  .port-card {
+    margin-top: 8px;
+    padding: 5px;
+  }
+
+  .port-card h3{
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 0rem;
+  }
 }
 
