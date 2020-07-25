@@ -1,0 +1,163 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: left;
+    line-height: 1.5;
+    background-color: #fff;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-family: Montserrat, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+  }
+  
+  h4 {
+    margin: 20px 0px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: gray;
+  }
+  
+  @media (max-width : 640px){
+    h1{
+      font-size: 2.1rem;
+    }
+    
+    h4{
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Generic */
+  
+  .row-detail {
+    margin: 5% 0% 5% 0%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+  }
+
+/* portfolio */
+
+#portfolio {
+    padding: 150px 0px;
+    background-color: #f7f7f7;
+    z-index: 2;
+  }
+  
+  .port-cont {
+    text-align: center;
+  }
+  
+  .upper-row{
+      margin-bottom: 0%;
+  }
+  
+  .lower-row{
+      margin-top: 3%;
+  }
+  
+  .port-card h3{
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0rem;
+  }
+  
+  .port-card h4{
+      margin-top: 0px;
+  }
+
+  .port-card .portfolio-link{
+      position: relative;
+      display: block;
+      max-width: 400px;
+      margin: 0 auto;
+      cursor: pointer;
+  }
+  
+  .port-card .card-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+    background-color: #fec810;
+    opacity: 0;
+  }
+
+  .port-card .card-hover:hover{
+      opacity: 0.9;
+  }
+  
+  .card-hover .card-hover-content{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    top: 35%;
+    font-size: 3rem;
+
+  }
+  /* .card-hover:hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: all 0.5s ease 0s;
+    background-color: #fec810;
+    opacity: 0.8;
+  }
+  
+  .port-card .card-hover-content{
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    color: white;
+  }
+  
+  .port-card .card-hover i{
+    margin: -12px;
+    font-size: 3em;
+  } */
+  
+  @media (max-width: 640px){
+    #portfolio{
+      padding-top: 100px ;
+    }
+    
+    .lower-row{
+      margin-top: 8px;
+    }
+  
+    .port-cont{
+      padding: 25px;
+    }
+  
+    .port-card {
+      margin-top: 8px;
+      padding: 5px;
+    }
+  
+    .port-card h3{
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 0rem;
+    }
+  }
