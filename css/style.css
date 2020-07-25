@@ -107,6 +107,7 @@ h4 {
   margin-top: 40px;
   padding: 20px 30px;
   background-color: #fec810;
+  border-color: #fed136;
   transition: transform 100ms linear;
   color: black;
 }
@@ -150,7 +151,7 @@ h4 {
   text-align: center;
 }
 
-.service-col h4 {
+.service-col .serv-desc-cont h4 {
   font-weight: 700;
   color: black;
 }
@@ -171,6 +172,10 @@ h4 {
 }
 
 @media (max-width: 640px) {
+  .service-col .serv-desc-cont p{
+    font-size: 1rem;
+  }
+
   #services {
     padding: 100px 0px;
   }
@@ -179,6 +184,18 @@ h4 {
 @media (max-width: 640px) {
   .service-col {
     padding: 15px;
+  }
+
+  .service-col .fas{
+    margin: 18px 0px;
+  }
+
+  .serv-desc-cont{
+    padding: 10px;
+  }
+
+  .serv-desc-cont h4{
+    margin: 10px;
   }
 }
 
@@ -247,31 +264,6 @@ font-size: 3rem;
 
 }
 
-/* .card-hover:hover{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform: all 0.5s ease 0s;
-  background-color: #fec810;
-  opacity: 0.8;
-}
-
-.port-card .card-hover-content{
-  font-size: 20px;
-  position: absolute;
-  top: 35%;
-  width: 100%;
-  height: 20px;
-  margin-top: -12px;
-  text-align: center;
-  color: white;
-}
-
-.port-card .card-hover i{
-  margin: -12px;
-  font-size: 3em;
-} */
-
 @media (max-width: 640px){
   #portfolio{
     padding-top: 100px ;
@@ -296,4 +288,64 @@ font-size: 3rem;
     margin-bottom: 0rem;
   }
 }
+
+/* footer */
+
+.footer-sect{
+  padding: 15px 15px 0px 15px;
+}
+
+.foot-cont{
+  padding: 0px 15px;
+  text-align: center;
+}
+
+.copy-div{
+  margin-top: 10px;
+}
+
+footer span.copyright{
+  font-size: 1rem;
+  line-height: 40px;
+  text-transform: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-sect .social-icons{
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+ }
+
+.icons{
+  color: black;
+}
+
+.terms-div{
+  margin-top: 18px;
+  text-align: center;
+}
+
+.terms-div a{
+  color: #fec810;
+  font-size: 1rem;
+}
+
+@media (max-width:640px){
+  .terms-div{
+    margin-top: 0px;
+    text-align: center;
+  }
+  
+  .footer-sect .social-icons{
+    font-size: 30px;
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+   }
+
+   footer{
+     padding: 15px;
+   }
+}
+
 
