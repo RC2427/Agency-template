@@ -79,6 +79,90 @@ h4 {
   padding: 15px;
 }
 
+/* Nav toggler */
+
+.nav-btn{
+  padding: 4px 12px 6px 12px;
+}
+
+.nav-btn:focus{
+  padding: 4px 12px 6px 12px;
+  border: none;
+  border-style: none;
+  outline: none;
+}
+
+.animated-icon{
+  width: 30px;
+  height: 20px;
+  margin: 0px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.animated-icon span{
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.animated-icon span{
+  background: rgb(241, 238, 238);
+}
+
+.animated-icon span:nth-child(1){
+  top: 0px;
+}
+
+.animated-icon span:nth-child(2){
+  top: 10px;
+}
+
+.animated-icon span:nth-child(3){
+  top: 20px;
+}
+
+.animated-icon.open span:nth-child(1){
+  top: 11px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.animated-icon.open span:nth-child(2){
+  opacity: 0;
+  left: -60px;
+}
+
+.animated-icon.open span:nth-child(3){
+  top: 11px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
 /* title */
 
 .header-cont {
@@ -157,7 +241,7 @@ h4 {
   font-size: 5.3rem;
   margin: 25px 0px;
   color: #fec810;
-}
+} 
 
 .service-col .fonticon :hover {
   transition: transform 50ms linear;
