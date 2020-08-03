@@ -392,6 +392,12 @@ font-size: 3rem;
   font-weight: 650;
 }
 
+@media (max-width: 640px){
+  .team-member{
+    padding-top: 8px;
+  }
+}
+
 /* clients */
 #client-detail{
   padding: 48px 0px;
